@@ -1,4 +1,4 @@
-# object-to-array
+# object-to-array [![Circle CI](https://circleci.com/gh/vdemedes/object-to-array.svg?style=svg)](https://circleci.com/gh/vdemedes/object-to-array)
 
 Convert object to array, where each item is an array of key & value.
 Useful for creating ES6 Map from a usual object.
@@ -29,6 +29,8 @@ map.get('key') === 'value'; // true
 
 
 ### Tests
+
+[![Circle CI](https://circleci.com/gh/vdemedes/object-to-array.svg?style=svg)](https://circleci.com/gh/vdemedes/object-to-array)
 
 ```
 $ make test
