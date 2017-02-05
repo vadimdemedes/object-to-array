@@ -1,6 +1,6 @@
 {
   "name": "object-to-array",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Convert object to array, where each item is an array of key & value",
   "repository": "vadimdemedes/object-to-array",
   "author": "Vadim Demedes <vdemedes@gmail.com>",
