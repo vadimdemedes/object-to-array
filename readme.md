@@ -1,4 +1,4 @@
-# object-to-array
+# object-to-array [![Build Status](https://travis-ci.org/vadimdemedes/object-to-array.svg?branch=master)](https://travis-ci.org/vadimdemedes/object-to-array)
 
 Convert object to array, where each item is an array of key & value. Useful for creating ES6 Map from a usual object.
 
