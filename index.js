@@ -1,28 +1,13 @@
 'use strict';
 
-/**
- * Expose object-to-array
- */
+module.exports = input => {
+	if (typeof input !== 'object') {
+		throw new TypeError(`Expected object, got ${typeof input}`);
+	}
 
-module.exports = objectToArray;
+	return Object.keys(input).map(key => {
+		const value = input[key];
 
-
-/**
- * Convert object to an array of arrays of keys and values
- */
-
-function objectToArray (obj) {
-  let arr = [];
-
-  let keys = Object.keys(obj);
-
-  keys.forEach(function (key) {
-    let value = obj[key];
-
-    let item = [key, value];
-
-    arr.push(item);
-  });
-
-  return arr;
-}
+		return [key, value];
+	});
+};

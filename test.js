@@ -1,34 +1,20 @@
-'use strict';
+import test from 'ava';
+import objectToArray from './';
 
-/**
- * Dependencies
- */
+test('fail when input is not an object', t => {
+	t.throws(() => objectToArray(), 'Expected object, got undefined');
+});
 
-const objectToArray = require('./');
+test('convert object to array', t => {
+	const obj = {
+		first: 'first value',
+		second: 'second value'
+	};
 
-require('chai').should();
-
-
-/**
- * Tests
- */
-
-describe ('object-to-array', function () {
-
-  it ('convert object to array', function () {
-    let obj = {
-      first: 'first value',
-      second: 'second value'
-    };
-
-    let arr = objectToArray(obj);
-
-    arr.length.should.equal(2);
-
-    arr.should.deep.equal([
-      ['first', 'first value'],
-      ['second', 'second value']
-    ]);
-  });
-
+	const arr = objectToArray(obj);
+	t.is(arr.length, 2);
+	t.deepEqual(arr, [
+		['first', 'first value'],
+		['second', 'second value']
+	]);
 });
