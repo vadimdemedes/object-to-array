@@ -5,6 +5,9 @@
   "repository": "vadimdemedes/object-to-array",
   "author": "Vadim Demedes <vdemedes@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">= 4"
+  },
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"
