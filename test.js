@@ -12,7 +12,6 @@ test('convert object to array', t => {
 	};
 
 	const arr = objectToArray(obj);
-	t.is(arr.length, 2);
 	t.deepEqual(arr, [
 		['first', 'first value'],
 		['second', 'second value']
